@@ -4,4 +4,5 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-	return 'Hello! This is application 1'
+	file = open("/etc/data/hello.txt". "r")
+	return file.read()
